@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.allTasks{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.allTasks > div{
+    margin: 2rem;
+}
+
+.task{
+    width: 25rem;
+    padding: 2rem;
+    box-shadow: 0 14px 28px rgba(238, 239, 242, 1), 0 10px 10px rgba(238, 239, 242, 1);
+    border-radius: 2rem;
+}
+
+.task > *{
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Djanbolotov16 </h1>
+        <div class="allTasks">
+
+            <div class="task">
+                <h2>1. Задание</h2>
+                <h3>1.1:</h3>
+                <p>for (var i = 0; i < 10; i++) { <br>
+                        &nbsp &nbsp &nbsp setTimeout(function() { <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp console.log(i); <br>
+                        &nbsp &nbsp &nbsp } <br>
+                        }; <br>
+                        Что выведет консоль и почему?
+                </p>
+                <h2>Ответ:</h2>
+                <p>Можно увидеть на консоле</p>
+                <p>Консоль выведет десять раз 10
+                    Потому что у переменной var нету области видимости.
+                    Т.е можно сказать что переменная создалась глобально
+                    и у каждой итерации переменная не сохраняла значение а просто менялась.
+                    Причина вывода 10 в том что браузер сперва выполнит синхронный код,
+                    а потом только асинхронный. Т.е setTimeout является асинхронным.
+                    К моменту вызова 10 setTimeoutов переменная i стал 10. А еслиб
+                    переменная создавалась через let, то программа вывела бы от 0 до 9
+                    включительно. Потому что у let есть область видимости, и у каждой
+                    итерации сохранится своя переменная i.
+                </p>
+            </div>
+
+            <div class="task">
+                <h2>2. Задание</h2>
+                <h3>2.1:</h3>
+                <p>
+                    Write a JavaScript program to display the current day and time in the following format. <br>
+                    Sample Output : <br>
+                    Today is : Friday. <br>
+                    Current time is : 4 PM : 50 : 22
+                </p>
+                <h2>Ответ:</h2>
+                <p class="this_date"></p>
+            </div>
+
+            <div class="task">
+                <h3>2.2:</h3>
+                <p>
+                    Write a JavaScript function that reverse a number. <br>
+                    Example x = 32243; <br>
+                    Expected Output : 34223
+                </p>
+                <h2>Ответ:</h2>
+                <button id="reverseNumberNode">Запустить</button>
+                <p class="reverse_num"></p>
+            </div>
+
+            <div class="task">
+                <h3>2.3:</h3>
+                <p>
+                    Write a JavaScript program to calculate the factorial
+                    of a number. In mathematics, the factorial of a non-negative
+                    integer n, denoted by n!, is the product of all positive
+                    integers less than or equal to n. <br>
+                    For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
+                </p>
+                <h2>Ответ:</h2>
+                <button id="factorialNumberNode">Запустить</button>
+                <p class="factorial"></p>
+            </div>
+
+            <div class="task">
+                <h3>2.4:</h3>
+                <p>
+                    Write a JavaScript program that accept
+                    two integers and display the larger.
+                </p>
+                <h2>Ответ</h2>
+                <button id="largerNumberNode">Запустить</button>
+                <p class="largerNumber"></p>
+            </div>
+
+            <div class="task">
+                <h3>2.5:</h3>
+                <p>
+                    Write a simple JavaScript program to join all elements of the following array into a string. <br>
+                    Sample array : myColor = ["Red", "Green", "White", "Black"]; <br>
+                    Expected Output : <br>
+                    "Red,Green,White,Black" <br>
+                    "Red+Green+White+Black" <br>
+
+                </p>
+                <h2>Ответ</h2>
+                <button id="joinArrNode">Запустить</button>
+                <p class="joinElements"></p>
+            </div>
+
+            <div class="task">
+                <h3>2.6:</h3>
+                <p>
+                    Write a JavaScript function to get the month name from a particular date. <br>
+                    Test Data : <br>
+                    console.log(month_name(new Date("10/11/2009"))); <br>
+                    console.log(month_name(new Date("11/13/2014"))); <br>
+                    Output : <br>
+                    "October" <br>
+                    "November" <br>
+                </p>
+                <h2>Ответ</h2>
+                <button id="getMonthButton">Запустить</button>
+                <p class="getMonthParagraph"></p>
+            </div>
+
+            <div class="task">
+                <h3>2.7:</h3>
+                <p>
+                    Write a JavaScript program to test the first character of a string is uppercase or not
+                </p>
+                <h2>Ответ</h2>
+                <button id="isUpperCaseButton">Запустить</button>
+                <p class="isUpperCaseParagraph"></p>
+            </div>
+
+            <div class="task">
+                <h3>2.8:</h3>
+                <p>
+                    Write a JavaScript program to draw a smile
+                </p>
+                <h2>Ответ</h2>
+                <button id="smileButton">Запустить</button>
+                <div class="smileDiv">
+                    <div class="eyes">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="mouth"></div>
+                </div>
+            </div>
+
+            <div class="task">
+                <h2>4. Задание</h2>
+                <h3>4.1:</h3>
+                <div>
+                    <p>На странице есть верстка:</p>
+                    <div id="string-1">Ядра в вёдра, выдру в тундру!</div>
+                    <div id="string-2">Выдрав с выдры в тундре гетры</div>
+                    <div id="string-3">В недрах тундры, выдры в гетрах </div>
+                    <div id="string-4">Вытру гетрой выдре морду </div>
+                    <div id="string-5">Тырят в вёдра ядра кедров!</div>
+                    <div id="string-6">Вытру выдрой ядра кедров</div>
+                    <p>
+                        Необходимо поочередно обратиться к каждому тэгу в нужном порядке, и вывести их содержимое в
+                        консоль,
+                        чтобы получилась осмысленная скороговорка.
+                    </p>
+                    <p>
+                        Вывод в консоли: <br>
+                        В недрах тундры, выдры в гетрах <br>
+                        Тырят в вёдра ядра кедров! <br>
+                        Выдрав с выдры в тундре гетры <br>
+                        Вытру выдрой ядра кедров <br>
+                        Вытру гетрой выдре морду <br>
+                        Ядра в вёдра, выдру в тундру! <br>
+                    </p>
+                </div>
+                <h2>Ответ: Можно увидеть на консоле</h2>
+                <p class="this_date"></p>
+            </div>
+
+            <div class="task">
+                <h3>4.2:</h3>
+                <div> На странице есть верстка</div>
+                <div class="allElements">
+                    <div class="element">Element 1</div>
+                    <div class="element">Element 2</div>
+                    <div class="element">Element 3</div>
+                    <div class="element">Element 4</div>
+                    <div class="element">Element 5</div>
+                    <div class="element">Element 6</div>
+                </div>
+                <div> С помощью JS необходимо первым трем элементам задать красный цвет текста, а остальным трем -
+                    зеленый.
+                </div>
+                <h2>Ответ</h2>
+                <button id="changeColorButton">Запустить</button>
+            </div>
+
+            <div class="task">
+                <h3>4.3:</h3>
+                <div>
+                    На странице есть контейнер ol id="todo-list" /ol, необходимо с помощью цикла добавить в него пять
+                    задач (элементов li) с классом task и текстом, взятым из массива задач из пяти элементов: <br>
+
+                    var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat']; <br>
+
+                    Ожидаемый результат в инспекторе после выполнения скрипта: <br>
+
+                    `ol id="todo-list" <br>
+                    li class="task">Buy lemonade /li <br>
+                    li class="task">Make toasts /li <br>
+                    li class="task">Repair car /li <br>
+                    li class="task">Play games /li <br>
+                    li class="task">Pet a cat /li <br>
+                    /ol
+                </div>
+                <h2>Ответ</h2>
+                <button id="todoButton">Запустить</button>
+                <ol class="todo-list"></ol>
+            </div>
+
+            <div class="task">
+                <h3>4.4:</h3>
+                <div>
+                    На странице есть следующая разметка:
+
+                </div>
+                <div>
+                    <article>
+                        <h3>What is Lorem Ipsum?</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only
+                            five
+                            centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                            Ipsum
+                            passages.</p>
+                        <h3>Where does it come from?</h3>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                            piece of
+                            classical Latin literature from 45 BC, making it over 2000 years old. The first line of
+                            Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. from
+                            "The
+                            Extremes of Good and Evil" by Cicero</p>
+                        <h3>Why do we use it?</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of
+                            a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                            here', making it look like readable English.</p>
+                    </article>
+                </div>
+                <div>
+                    Вам необходимо с помощью JavaScript вставить после каждого тега "p" тег
+                    "hr", для визуального отделения абзацев друг от друга. <br>
+
+                    Указания: <br>
+                    Подразумевается, что вышеуказанная разметка находится внутри тега
+
+                    body. <br>
+                    Нельзя модифицировать указанную разметку. <br>
+                    За использование цикла дополнительные баллы.
+                </div>
+                <h2>Ответ</h2>
+                <button id="textButton">Запустить</button>
+            </div>
+
+            <div class="task">
+                <h3>4.5:</h3>
+                <div>
+                    Дана такая разметка:
+                </div>
+                <div id="cart-items">
+                    <div class="item">Milk 1 l.<span class="qty">x 2</span></div>
+                    <div class="item">Cola 1.5 l. <span class="qty">x 1</span></div>
+                    <div class="item">Bread<span class="qty">x 2</span></div>
+                    <div class="item">Cheese<span class="qty">x 1</span></div>
+                    <div class="item">Chocolate bar<span class="qty">x 3</span></div>
+                </div>
+                <div>
+                    Необходимо с помощью JavaScript удалить элемент "Cola 1.5 l" и заменить товар "Chocolate bar" на
+                    "Canned Fish", количеством 4 штуки.
+                </div>
+                <div>
+                    Указания: <br>
+                    Для удаления использовать .remove() <br>
+                    Для замены использовать .replaceChild() <br>
+                    Подразумевается, что вышеуказанная разметка находится внутри тега body.
+                </div>
+                <h2>Ответ</h2>
+                <button id="colaButton">Запустить</button>
+            </div>
+
+            <div class="task">
+                <h3>4.6:</h3>
+                <div>
+                    Напишите программу для создания списка задач, которые будет вводить пользователь: <br>
+                    Для каждого пункта: <br>
+                    Запрашивайте содержимое пункта у пользователя с помощью prompt. <br>
+                    Создавайте пункт и добавляйте его к UL. <br>
+                    Процесс прерывается, когда пользователь нажимает "Отмена" или вводит пустую строку.
+                </div>
+                <h2>Ответ</h2>
+                <button id="planButton">Запустить</button>
+                <ol class="plan"></ol>
+            </div>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
